@@ -1,0 +1,18 @@
+boolean flag = true;  // proceed to the sort  
+array[] = [1,2,3} // The list of numbers to be sorted 
+int len = length(array); // how many members in array. (3 in this case 
+int i = 0; // Index which points to a member of the array (the list) 
+int buffer = 0;  // Temporary storage. At the beginning it is empty 
+ 
+while (flag)  // while the sorting is not finished  
+{ 
+  if array [i] is > array[i+1]  // If 1st. element is greater than 2nd... 
+  { 
+  buffer = array [i]; // Save fist element in temporary storage 
+  array[i] = array[i + 1]; // Install 2nd element in first place 
+  array[i+1] = buffer;  // install in 2nd. place the first element 
+  if (i < len) // if i is within the array length, increase index 
+	i = i + 1; // so we can concentrate in the next pair 
+  else i = 0; //Otherwise, let's start the bubble again 
+  } 
+} 
